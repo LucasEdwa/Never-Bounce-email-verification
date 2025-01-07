@@ -38,7 +38,7 @@ function App() {
     console.log(data);
 
     const apiKey = import.meta.env.VITE_NEVERBOUNCE_APIKEY as string;
-        const email = data.email as string;
+    const email = data.email as string;
     await verifyEmail(email, apiKey);
   };
 
